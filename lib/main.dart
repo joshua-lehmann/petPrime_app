@@ -78,7 +78,8 @@ class _MyHomePageState extends State<MyHomePage> {
       final user = <String, dynamic>{
         "firstName": "Joshua",
         "lastname": "Lehmann",
-        "counter": _counter
+        "counter": _counter,
+        "timestamp": FieldValue.serverTimestamp()
       };
 
       // Add a new document with a generated ID
