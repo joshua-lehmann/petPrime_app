@@ -1,4 +1,4 @@
-# demo_flutter_app
+# PetPrime
 
 A new Flutter project.
 
