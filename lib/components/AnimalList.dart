@@ -9,6 +9,7 @@ var start3 = DateTime.now().subtract(const Duration(days: 7));
 class AnimalList extends StatelessWidget {
   final List<AnimalData> animals = [
     AnimalData(
+      tagId: "6262",
       name: 'Felix',
       profilePictureUrl:
           'https://i.pinimg.com/736x/5d/22/cb/5d22cbbaf3cd689020ad795f14092cd3.jpg',
@@ -17,6 +18,7 @@ class AnimalList extends StatelessWidget {
       petEndTime: start2,
     ),
     AnimalData(
+      tagId: "55555",
       name: 'Luna',
       profilePictureUrl:
           'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F84e03f68-eef8-11eb-a2a3-afea84050239.jpg?crop=4246%2C2388%2C0%2C221&resize=1200',
@@ -25,6 +27,7 @@ class AnimalList extends StatelessWidget {
       petEndTime: start3,
     ),
     AnimalData(
+      tagId: "1111",
       name: 'Mia',
       profilePictureUrl:
           'https://hips.hearstapps.com/hmg-prod/images/large-cat-breed-1553197454.jpg',
@@ -52,11 +55,7 @@ class AnimalList extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => AnimalDetail(
-                    animalName: animals[index].name,
-                    profilePictureUrl: animals[index].profilePictureUrl,
-                    lastPetTime: animals[index].lastPetTime,
-                    petStartTime: animals[index].petStartTime,
-                    petEndTime: animals[index].petEndTime,
+                    animalData: animals[index],
                   ),
                 ),
               );
@@ -99,8 +98,10 @@ class AnimalData {
   final DateTime lastPetTime;
   final DateTime petStartTime;
   final DateTime petEndTime;
+  final String tagId;
 
   AnimalData({
+    required this.tagId,
     required this.name,
     required this.profilePictureUrl,
     required this.lastPetTime,

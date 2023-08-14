@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBcRrnTRovTYYPAQ8Vc0yFeHaoO76Bga8s',
-    appId: '1:136704119931:web:033974a2f756b14e5d7ede',
-    messagingSenderId: '136704119931',
-    projectId: 'fir-flutter-app-jle',
-    authDomain: 'fir-flutter-app-jle.firebaseapp.com',
-    storageBucket: 'fir-flutter-app-jle.appspot.com',
-    measurementId: 'G-HNWEMCDT8Q',
+    apiKey: 'AIzaSyB04NLhxDglR32ZT5L0h9eXK-D_9oOBTY0',
+    appId: '1:94204741370:web:c4874833575b2194ddeb43',
+    messagingSenderId: '94204741370',
+    projectId: 'hftm-petprime',
+    authDomain: 'hftm-petprime.firebaseapp.com',
+    storageBucket: 'hftm-petprime.appspot.com',
+    measurementId: 'G-THWGC889PQ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA_b2Skxuu4Tn9C-86oUEPHmae-T_rBb-I',
-    appId: '1:136704119931:android:cdb3f933e3760dc95d7ede',
-    messagingSenderId: '136704119931',
-    projectId: 'fir-flutter-app-jle',
-    storageBucket: 'fir-flutter-app-jle.appspot.com',
+    apiKey: 'AIzaSyDa6MTp1HQtCjv9yO37YyLgqBlU_J3bkxU',
+    appId: '1:94204741370:android:6ff3a5fe10232e78ddeb43',
+    messagingSenderId: '94204741370',
+    projectId: 'hftm-petprime',
+    storageBucket: 'hftm-petprime.appspot.com',
   );
 }
